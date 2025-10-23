@@ -78,14 +78,14 @@
                         bridge.platform.on('pause_state_changed', isPaused => sendMessageToUnity('OnPauseStateChanged', isPaused.toString()))
 
                         let unityLoader = document.createElement('script')
-                        unityLoader.src = 'Build/GITHUB.loader.js'
+                        unityLoader.src = 'Build/SantaWebGl.loader.js'
                         unityLoader.onload = () => {
                             createUnityInstance(
                                 CANVAS,
                                 {
-                                    dataUrl: 'Build/GITHUB.data',
-                                    frameworkUrl: 'Build/GITHUB.framework.js',
-                                    codeUrl: 'Build/GITHUB.wasm',
+                                    dataUrl: 'Build/SantaWebGl.data',
+                                    frameworkUrl: 'Build/SantaWebGl.framework.js',
+                                    codeUrl: 'Build/SantaWebGl.wasm',
                                     streamingAssetsUrl: 'StreamingAssets',
                                     companyName: 'Ample Games',
                                     productName: 'Santas Gift',
